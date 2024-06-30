@@ -8,10 +8,17 @@
 import SwiftUI
 
 @main
-struct Sftwr_HouseApp: App {
+struct MySwiftUIAppApp: App {
+    @State private var isSplashScreenActive = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isSplashScreenActive {
+                SplashScreenView(isSplashScreenActive: $isSplashScreenActive)
+            } else {
+                MainView()
+            }
         }
     }
 }
+

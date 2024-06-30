@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1F1000F22C317C4E00536A95 /* Sftwr_HouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000F12C317C4E00536A95 /* Sftwr_HouseApp.swift */; };
-		1F1000F42C317C4E00536A95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000F32C317C4E00536A95 /* ContentView.swift */; };
-		1F1000F62C317C5000536A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1000F52C317C5000536A95 /* Assets.xcassets */; };
 		1F1000FA2C317C5000536A95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1000F92C317C5000536A95 /* Preview Assets.xcassets */; };
+		1F10010A2C31D44B00536A95 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1001092C31D44B00536A95 /* SplashScreenView.swift */; };
+		1F10010C2C31D46500536A95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10010B2C31D46500536A95 /* MainView.swift */; };
+		1F10010E2C31D68300536A95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10010D2C31D68300536A95 /* LoginView.swift */; };
+		1F1001102C31D6AE00536A95 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10010F2C31D6AE00536A95 /* RegisterView.swift */; };
+		1F1001132C31F61900536A95 /* RegisterNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1001122C31F61900536A95 /* RegisterNextView.swift */; };
+		1F1001162C31F8C800536A95 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1001152C31F8C800536A95 /* CustomPicker.swift */; };
+		1F1001172C3204E500536A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1000F52C317C5000536A95 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F1000EE2C317C4E00536A95 /* Sftwr_House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sftwr_House.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1000F12C317C4E00536A95 /* Sftwr_HouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sftwr_HouseApp.swift; sourceTree = "<group>"; };
-		1F1000F32C317C4E00536A95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F1000F52C317C5000536A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F1000F72C317C5000536A95 /* Sftwr_House.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sftwr_House.entitlements; sourceTree = "<group>"; };
 		1F1000F92C317C5000536A95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F1001092C31D44B00536A95 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		1F10010B2C31D46500536A95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1F10010D2C31D68300536A95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1F10010F2C31D6AE00536A95 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		1F1001122C31F61900536A95 /* RegisterNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNextView.swift; sourceTree = "<group>"; };
+		1F1001152C31F8C800536A95 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,9 @@
 		1F1000F02C317C4E00536A95 /* Sftwr_House */ = {
 			isa = PBXGroup;
 			children = (
+				1F1001142C31F8AD00536A95 /* Components */,
+				1F1001082C31D42C00536A95 /* Views */,
 				1F1000F12C317C4E00536A95 /* Sftwr_HouseApp.swift */,
-				1F1000F32C317C4E00536A95 /* ContentView.swift */,
 				1F1000F52C317C5000536A95 /* Assets.xcassets */,
 				1F1000F72C317C5000536A95 /* Sftwr_House.entitlements */,
 				1F1000F82C317C5000536A95 /* Preview Content */,
@@ -67,6 +78,34 @@
 				1F1000F92C317C5000536A95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F1001082C31D42C00536A95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F1001112C31E96200536A95 /* Auth */,
+				1F1001092C31D44B00536A95 /* SplashScreenView.swift */,
+				1F10010B2C31D46500536A95 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F1001112C31E96200536A95 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1F10010D2C31D68300536A95 /* LoginView.swift */,
+				1F10010F2C31D6AE00536A95 /* RegisterView.swift */,
+				1F1001122C31F61900536A95 /* RegisterNextView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1F1001142C31F8AD00536A95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1F1001152C31F8C800536A95 /* CustomPicker.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1001172C3204E500536A95 /* Assets.xcassets in Resources */,
 				1F1000FA2C317C5000536A95 /* Preview Assets.xcassets in Resources */,
-				1F1000F62C317C5000536A95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1000F42C317C4E00536A95 /* ContentView.swift in Sources */,
+				1F1001132C31F61900536A95 /* RegisterNextView.swift in Sources */,
+				1F1001162C31F8C800536A95 /* CustomPicker.swift in Sources */,
+				1F10010C2C31D46500536A95 /* MainView.swift in Sources */,
 				1F1000F22C317C4E00536A95 /* Sftwr_HouseApp.swift in Sources */,
+				1F1001102C31D6AE00536A95 /* RegisterView.swift in Sources */,
+				1F10010E2C31D68300536A95 /* LoginView.swift in Sources */,
+				1F10010A2C31D44B00536A95 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
