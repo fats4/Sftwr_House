@@ -49,19 +49,19 @@ struct LoginView: View {
             }
             .padding([.leading, .trailing], 27.5)
             
-            Button(action: {
-                // Action for login button
-            }) {
+            
+            
+            NavigationLink(destination: HomeView()) {
                 Text("Masuk")
                     .font(.headline)
-                    .frame(width: 200, height: 50)
-                    .background(Color("Utama"))
                     .foregroundColor(.black)
+                    .frame(width: 200, height: 50)
+                    .background(Color.yellow)
                     .cornerRadius(10)
-                    .padding(.top, 30)
             }
+            .padding(.top , 30)
+
             
-            Spacer(minLength: 350)
             
             HStack {
                 Text("Belum punya akun?")
@@ -71,7 +71,8 @@ struct LoginView: View {
                         .foregroundColor(Color.yellow)
                 }
             }
-            .padding(.bottom, 20)
+            Spacer(minLength: 350)
+
         }
         .navigationTitle("Masuk")
     }
