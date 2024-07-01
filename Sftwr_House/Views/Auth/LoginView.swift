@@ -51,7 +51,7 @@ struct LoginView: View {
             
             
             
-            NavigationLink(destination: HomeView()) {
+            NavigationLink(destination: CoreView()) {
                 Text("Masuk")
                     .font(.headline)
                     .foregroundColor(.black)

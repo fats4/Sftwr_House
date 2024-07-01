@@ -129,7 +129,7 @@ struct HomeView: View {
 
                     Spacer()
 
-                    CustomTabBar()
+                    // Removed CustomTabBar from here
                 }
                 .navigationBarHidden(true)
 
@@ -162,79 +162,6 @@ struct HomeView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-    }
-}
-
-struct CategoryView: View {
-    var imageName: String
-    var title: String
-    var isSelected: Bool
-    
-    var body: some View {
-        VStack {
-            Image(systemName: imageName)
-                .foregroundColor(isSelected ? .black : .black)
-                .frame(width: 65, height: 65)
-                .background(isSelected ? Color.yellow : Color("Lunas"))
-                .cornerRadius(10)
-            Text(title)
-                .font(.caption2)
-                .foregroundColor(isSelected ? .black : .gray)
-        }
-    }
-}
-
-struct ProductView: View {
-    var imageName: String
-    var title: String
-    var price: String
-    @Binding var showPopup: Bool
-    
-    var body: some View {
-        NavigationLink(destination: ProductDetailView(imageName: imageName, title: title, price: price, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", showPopup: $showPopup)) {
-            VStack {
-                Image(imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 150, height: 150)
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                Text(title)
-                    .font(.headline)
-                    .foregroundColor(.black)
-                    .multilineTextAlignment(.center)
-                Text(price)
-                    .foregroundColor(.gray)
-            }
-        }
-    }
-}
-
-
-struct CustomTabBar: View {
-    var body: some View {
-        HStack {
-            Spacer()
-            VStack {
-                Image(systemName: "house.fill")
-            }
-            Spacer()
-            VStack {
-                Image(systemName: "square.grid.2x2")
-            }
-            Spacer()
-            VStack {
-                Image(systemName: "bell")
-            }
-            Spacer()
-            VStack {
-                Image(systemName: "person.crop.circle")
-            }
-            Spacer()
-        }
-        .padding()
-        .background(Color.white)
-        .shadow(radius: 2)
     }
 }
 
